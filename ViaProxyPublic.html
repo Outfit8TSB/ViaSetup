@@ -189,7 +189,7 @@
                 .replaceAll("[", "").replaceAll("]", "") + ".sslip.io";
             if (val("bport") !== "") address += "_" + val("bport");
             if (val("bver") !== "") address += "_" + val("bver");
-            address += "." + val("suffix");
+            address += ".viaproxy." + val("suffix");
             if (val("iport") !== "") address += ":" + val("iport");
 
             document.getElementById('generated').value = address;
